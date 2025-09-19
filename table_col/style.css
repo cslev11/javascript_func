@@ -3,6 +3,23 @@ table, thead, tr, th, td{
     border-collapse: collapse;
 }
 
-td, th{
-    column-span: 2;
+
+thead{
+    background-color: red;
+}
+
+table thead~tbody>tr{
+    background-color: blue;
+}
+
+table tbody > tr{
+    background-color: aqua;
+}
+
+tbody tr:nth-child(2n){
+    background-color: green;
+}
+
+tbody tr:hover{
+    background-color: white;
 }
