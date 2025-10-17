@@ -70,3 +70,16 @@ for (const ar of arr) {
         tr2.appendChild(td4);
     } else {td3.colSpan = 2}
 }
+
+/**
+ * 
+ * @param {string} cellType 
+ * @param {string} cellContent 
+ * @param {HTMLTableRowElement} cellRow 
+ */
+
+function createCellElement(cellType, cellContent, cellRow){
+    const type = document.createElement(cellType);
+    th.innerText = cellContent;
+    cellRow.appendChild(type)
+}

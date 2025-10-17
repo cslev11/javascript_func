@@ -38,3 +38,4 @@ function valami4(param1 ){
 
 const opsum = valami4(4);
 console.log(opsum);
+
