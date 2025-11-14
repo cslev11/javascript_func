@@ -1,54 +1,6 @@
 /**
- * @type {{nationality?:string, writer:string, title:string}[]}
  * @typedef {{nationality?:string, writer:string, title:string}} CountryWriters
  */
-const arr = [
-    {
-        nationality: 'Orosz',
-        writer: 'Gogol',
-        title: 'A köpönyeg'
-    },
-    {
-        writer: 'Csehov',
-        title: 'A csinovnyik halála'
-    },
-    {
-        nationality: 'Cseh',
-        writer: 'Franz Kafka',
-        title: 'Az átváltozás'
-    },
-    {
-        nationality: 'Magyar',
-        writer: 'Örkény István',
-        title: 'Egyperces Novellák'
-    },
-    {
-        writer: 'József Attila',
-        title: 'Klárisok'
-    },
-    {
-        nationality: 'Svájc',
-        writer: 'Friedrich Dürrenmatt',
-        title: 'A fizikusok'
-    }
-]
-
-const table = document.createElement("table");
-document.body.appendChild(table);
-
-
-const thhead = ["Nemzetiség", "Szerző", "Mű"];
-
-generateHeader(table, thhead);
-
-
-
-const tbody = document.createElement("tbody");
-table.appendChild(tbody);
-
-for (let i = 0; i < arr.length; i++) {
-    renderTableRow(tbody, arr[i], arr[i + 1])
-}
 
 function renderTableRow(tablebody, CountryWriters, CountryWriters2) {
     const tr2 = document.createElement("tr");
